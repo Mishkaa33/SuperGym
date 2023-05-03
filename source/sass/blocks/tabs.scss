@@ -1,0 +1,32 @@
+.tabs__controls {
+  margin: 0 0 39px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs__control {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(16, 38, 84, 0.5);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @include hover-focus {
+    opacity: 0.8;
+    color: #102654;
+    border-color: #d10a42;
+  }
+}
+
+.tabs__control.is-active {
+  pointer-events: none;
+  color: #102654;
+  border-color: #d10a42;
+}

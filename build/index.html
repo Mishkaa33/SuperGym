@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-header">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrapper">
+              <a class="header__logo-link" href="#">
+                <svg
+                  width="122"
+                  height="44"
+                  viewBox="0 0 122 44"
+                  role="img"
+                  focusable="false"
+                >
+                  <use xlink:href="./img/sprite.svg#button-play"></use>
+                </svg>
+              </a>
+              <a class="header__phone-link" href="tel:88005555555"
+                >8-800-555-55-55</a
+              >
+            </div>
+          </div>
+        </header>
+        <section class="promo">
+          <div class="container">
+            <div class="promo__wrapper">
+              <div class="promo__info">
+                <p>Омск</p>
+                <h1>Фитнес центр</h1>
+                <ul class="promo__list">
+                  <li class="promo__item">Тренажерный зал</li>
+                  <li class="promo__item">Групповые занятия</li>
+                  <li class="promo__item">Кардио-зона</li>
+                </ul>
+                <a class="btn promo__order" href="#">Купить абонемент</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <main>
+        <section class="about">
+          <div class="container">
+            <div class="about__wrapper">
+              <div class="about__content">
+                <h2>Тренажерный зал</h2>
+                <h3>Просторный зал площадью 900 кв/м</h3>
+                <p>
+                  Supergym&nbsp;&mdash; самый большой фитнес центр
+                  за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+                  и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+                  современным оборудованием для всех спортсменов.
+                </p>
+                <p>
+                  В&nbsp;зале расположены отдельная зона для Crossfit
+                  и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                  в&nbsp;фитнес центре есть несколько оборудованных залов для
+                  различных видов групповых занятий.
+                </p>
+              </div>
+              <div class="about__video">
+                <picture>
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="
+                      ./img/mobile/gym-mobile.png,
+                      ./img/mobile/mobile-bg@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./img/tablet/gym-tablet.png,
+                      ./img/tablet/gym-tablet.png 2x
+                    "
+                  />
+                  <img
+                    class="about__gym-image"
+                    src="./img/desktop/gym.png"
+                    alt=""
+                    width="660"
+                    height="401"
+                  />
+                </picture>
+                <div class="video">
+                  <img
+                    class="video__background"
+                    src="./img/video-bg.png"
+                    alt=""
+                    width="364"
+                    height="228"
+                  />
+                  <div class="video__bg-filter"></div>
+                  <button
+                    class="video__button-play"
+                    type="button"
+                    data-video-play
+                  >
+                    <svg
+                      class="video__button-image"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 100 100"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="49"
+                        stroke="url(#paint0_linear_7653_167)"
+                        stroke-opacity="0.2"
+                        stroke-width="2"
+                      />
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="36"
+                        fill="url(#paint1_linear_7653_167)"
+                      />
+                      <path
+                        d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
+                        fill="white"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_7653_167"
+                          x1="19.774"
+                          y1="3.00672e-05"
+                          x2="105.785"
+                          y2="10.6444"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#ED0233" />
+                          <stop offset="1" stop-color="#003EB7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_7653_167"
+                          x1="14"
+                          y1="49.52"
+                          x2="54.1858"
+                          y2="9.18415"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#003D85" />
+                          <stop offset="0.885417" stop-color="#B80027" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </button>
+                  <iframe
+                    class="video__player"
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/9TZXsZItgdw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tickets">
+          <div class="container">
+            <div class="tickets__wrapper">
+              <h2>Абонементы</h2>
+              <div
+                class="tabs"
+                data-tabs="parent"
+                data-delay="300"
+                data-height="max"
+              >
+                <div class="tabs__controls" data-tabs="controls">
+                  <button
+                    class="tabs__control"
+                    type="button"
+                    data-tabs="control"
+                  >
+                    1 месяц
+                  </button>
+                  <button
+                    class="tabs__control"
+                    type="button"
+                    data-tabs="control"
+                  >
+                    6 месяцев
+                  </button>
+                  <button
+                    class="tabs__control"
+                    type="button"
+                    data-tabs="control"
+                  >
+                    12 месяцев
+                  </button>
+                </div>
+                <div class="tabs__content" data-tabs="content">
+                  <div data-tabs="element">
+                    <ul class="tickets__list">
+                      <li class="tickets__item" tabindex="0">
+                        <div class="ticket">
+                          <h3>С&nbsp;тренером</h3>
+                          <span>12 занятий</span>
+                          <p>5000&nbsp;₽</p>
+                          <a class="ticket__order" href="#">купить абонемент</a>
+                        </div>
+                      </li>
+                      <li class="tickets__item" tabindex="0">
+                        <div class="ticket">
+                          <div class="ticket__wrapper">
+                            <h3>Дневной</h3>
+                            <span>с 8:00 до 17:00 </span>
+                            <p>1700&nbsp;₽</p>
+                            <a class="ticket__order" href="#"
+                              >купить абонемент</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tickets__item">
+                        <div class="ticket">
+                          <div class="ticket__wrapper">
+                            <h3>Полный&nbsp;день</h3>
+                            <span>с 8:00 до 22:00 </span>
+                            <p>2700&nbsp;₽</p>
+                            <a class="ticket__order" href="#"
+                              >купить абонемент</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div data-tabs="element"><p>2 tab</p></div>
+                  <div data-tabs="element"><p>3 tab</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./img/desktop/weight-desktop.png"
+            alt=""
+            width="321"
+            height="384"
+          />
+        </section>
+      </main>
+      <footer>
+        <div class="container"></div>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button
+            class="modal__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--preload modal--fit-content modal--no-scale"
+      data-modal="success"
+    >
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">
+            Размер этой модалки зависит от ширины контента,<br />
+            отключена анимация-скейл
+          </p>
+          <button
+            class="modal__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

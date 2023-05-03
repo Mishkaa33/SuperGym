@@ -1,0 +1,61 @@
+/*.promo__info {
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
+  grid-template-columns: 133px 246px 1fr;
+  grid-template-areas:
+    "list location img"
+    "list title img"
+    "list button img";
+  gap: 13px 16px;
+
+  p {
+    margin: 0;
+    font-family: $ff-alumni;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $color-default-white;
+    grid-area: location;
+    align-self: end;
+  }
+
+  h1 {
+    grid-area: title;
+    margin: 0;
+    font-family: $ff-alumni;
+    font-size: 92px;
+    line-height: 110px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: $color-default-white;
+  }
+
+  img {
+    grid-area: img;
+  }
+}
+
+.promo__list {
+  grid-area: list;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 280px;
+}
+
+.promo__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: $color-default-white;
+}
+
+.promo__order {
+  grid-area: button;
+}
+*/

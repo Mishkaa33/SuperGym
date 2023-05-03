@@ -1,0 +1,49 @@
+.tickets {
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+
+    bottom: -62px;
+    right: -93px;
+    z-index: -1;
+  }
+}
+
+.tickets__wrapper {
+  h2 {
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.tickets__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.tickets__item {
+  @include hover-focus {
+    .ticket {
+      border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+      border-image-slice: 1;
+    }
+
+    .ticket__order {
+      border: transparent;
+      color: $color-default-white;
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+  }
+}

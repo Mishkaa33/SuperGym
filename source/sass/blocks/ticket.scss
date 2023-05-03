@@ -1,0 +1,37 @@
+.ticket {
+  text-align: center;
+  border: 7px solid transparent;
+  padding: 15.83% 70px;
+  background-color: $color-default-white;
+
+  h3 {
+    margin: 0 0 5px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  span {
+    display: block;
+    margin: 0 0 66px;
+    color: $color-chambray;
+  }
+
+  p {
+    margin: 0 0 34px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+  }
+}
+
+.ticket__order {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  border: 2px solid #102654;
+  padding: 27px;
+  width: 206px;
+  text-transform: uppercase;
+}
