@@ -1,0 +1,234 @@
+.advantages {
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 71px 0;
+  }
+}
+
+.advantages__wrapper {
+  h2 {
+    margin: 0 0 45px 0;
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      padding-right: 22px;
+    }
+
+    @include vp-767 {
+      padding-right: 18px;
+      font-size: 32px;
+      line-height: 38px;
+      margin: 0 0 47px;
+    }
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0 70px 0 80px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 148px 11px;
+  grid-auto-flow: dense;
+
+  @include vp-1199 {
+    padding: 0;
+    gap: 44px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    gap: 37px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages__item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 0 31px;
+  position: relative;
+
+  &:nth-child(n + 4) {
+    &:nth-child(-n + 15) {
+      &::before {
+        position: absolute;
+        content: '';
+        width: 340px;
+        height: 2px;
+        background-color: rgba(209, 10, 66, 0.2);
+        top: -76px;
+        left: -19px;
+
+        @include vp-1199 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 6px;
+
+    &:nth-child(n + 4):not(.advantages__head) {
+      order: 1;
+    }
+  }
+}
+
+.advantages__item-content {
+  color: $color-sapphire;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    line-height: 150%;
+
+    @include vp-1199 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    @include vp-1199 {
+      margin-bottom: 3px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+
+    @include vp-767 {
+      width: 227px;
+      text-align: center;
+    }
+  }
+}
+
+.advantages__item-value {
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 64px;
+    background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @include vp-1199 {
+      font-size: 58px;
+      line-height: 50px;
+    }
+  }
+
+  small {
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-persian-blue;
+  }
+}
+
+.advantages__head {
+  padding: 51px 34px 65px 34px;
+  background-color: $color-resolution-blue;
+  grid-column: 2 / 3;
+  height: 307px;
+  grid-row: span 2;
+  margin: 7px 48px 0 40px;
+  position: relative;
+
+  @include vp-1199 {
+    height: 239px;
+    padding: 30px 123px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 41px 50px;
+    display: grid;
+    order: 1;
+    grid-template-columns: 1fr;
+    margin: 5px -15px 8px;
+  }
+}
+
+.advantages__head-content {
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 80px;
+    margin-right: 4px;
+
+    @include vp-1199 {
+      line-height: 77px;
+    }
+
+    @include vp-767 {
+      line-height: 66px;
+    }
+  }
+
+  small {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    margin-bottom: 32px;
+
+    @include vp-1199 {
+      font-size: 22px;
+      line-height: 150%;
+      margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 9px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+
+    @include vp-1199 {
+      max-width: 195px;
+    }
+  }
+}

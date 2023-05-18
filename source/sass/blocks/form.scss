@@ -1,0 +1,57 @@
+.form {
+  h2 {
+    margin: 0 0 20px 0;
+    font-family: $ff-alumni;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+
+    @include vp-1199 {
+      margin: 0 0 34px;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 36px 0;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 30px;
+
+  @include vp-1199 {
+    gap: 0 58px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.form__submit {
+  margin: 28px 0 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 17px;
+  color: $color-default-white;
+  border: 3px solid $color-default-white;
+  cursor: pointer;
+  background-color: transparent;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+
+  @include vp-767 {
+    margin: 3px 0 0 0;
+  }
+}

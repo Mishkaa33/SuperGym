@@ -3,13 +3,7 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
+  width: 100%;
 
   label {
     display: flex;
@@ -24,28 +18,25 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
-
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      border: none;
+      padding: 4px 0;
+      border-bottom: 1px solid #74819c;
+      background-color: transparent;
       outline: none;
+      color: $color-default-white;
+      caret-color: $color-default-white;
 
-      transition: border 0.3s ease;
-
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
+      &::placeholder {
+        color: $color-default-white;
       }
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
-
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+      @include hover-focus {
+        &::placeholder {
+          opacity: 0.5;
+        }
       }
     }
   }

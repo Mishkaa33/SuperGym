@@ -1,37 +1,134 @@
 .ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   border: 7px solid transparent;
-  padding: 15.83% 70px;
+  padding: 56px 45px 61px 45px;
   background-color: $color-default-white;
 
+  @include vp-1199 {
+    max-width: 100%;
+    min-height: 448px;
+    padding: 63px 111px;
+
+    &--day {
+      padding: 53px 111px 61px;
+    }
+
+    &--full-day {
+      padding: 57px 111px 53px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 39px 35px 52px 35px;
+    min-height: 384px;
+
+    &--day {
+      padding: 44px 36px 48px 35px;
+    }
+
+    &--full-day {
+      padding: 49px 34px 47px 34px;
+    }
+  }
+
   h3 {
-    margin: 0 0 5px;
+    margin: 0 0 10px;
     font-weight: 700;
     font-size: 26px;
     line-height: 29px;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 24px;
+    }
   }
 
   span {
     display: block;
     margin: 0 0 66px;
     color: $color-chambray;
+
+    @include vp-767 {
+      margin: 0 0 54px;
+    }
   }
 
   p {
+    position: relative;
     margin: 0 0 34px;
     font-weight: 700;
     font-size: 60px;
     line-height: 150%;
+    z-index: 1;
+    color: $color-egyptian-blue;
+
+    &::before {
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: attr(data-count);
+      z-index: -1;
+      color: $color-whisper;
+      font-size: 100px;
+      opacity: 0.48;
+    }
+
+    @include vp-767 {
+      margin: 0 0 31px;
+      padding-left: 4px;
+      font-size: 48px;
+    }
+  }
+}
+
+.ticket__rouble {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
   }
 }
 
 .ticket__order {
+  position: relative;
+  white-space: nowrap;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   display: block;
   border: 2px solid #102654;
-  padding: 27px;
-  width: 206px;
+  padding: 23px 40px;
+  width: 100%;
+  max-width: 206px;
   text-transform: uppercase;
+  transition: 1s;
+  background: none;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  letter-spacing: 0.05em;
+
+  @include vp-1199 {
+    padding: 23px 44px;
+  }
+
+  @include vp-767 {
+    padding: 23px 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    z-index: -1;
+    transition: 1s;
+  }
 }
