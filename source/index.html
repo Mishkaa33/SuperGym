@@ -175,7 +175,7 @@
                       media="(max-width: 767px)"
                       srcset="
                         ./img/mobile/video-bg-mobile.webp,
-                        ./img/mobile/video-bg-mobile@2x.png 2x
+                        ./img/mobile/video-bg-mobile@2x.webp 2x
                       "
                     />
                     <source
@@ -1073,13 +1073,24 @@
                       </p>
                     </li>
                     <li class="feedback__item swiper-slide">
-                      <img
-                        class="feedback__avatar"
-                        src="./img/feedback.png"
-                        alt=""
-                        width="80"
-                        height="80"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/feedback.webp,
+                            ./img/feedback@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          class="feedback__avatar"
+                          src="./img/feedback.png"
+                          srcset="./img/feedback@2x.png 2x"
+                          alt="Аватар отзыва Анны."
+                          width="80"
+                          height="80"
+                        />
+                      </picture>
                       <h3>Анна Орлова</h3>
                       <p>
                         &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится,
