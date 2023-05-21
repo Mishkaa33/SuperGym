@@ -1,5 +1,5 @@
 .tabs__controls {
-  margin: 0 auto 38px auto;
+  margin: 0 auto 40px auto;
   display: flex;
   flex-wrap: wrap;
   width: 341px;
@@ -80,7 +80,11 @@
 .tabs__control.is-active {
   pointer-events: none;
   color: #102654;
+
   &::after {
+    @include vp-767 {
+      width: 111%;
+    }
     animation: animation-line;
     animation-duration: 1s;
     background-color: #d10a42;

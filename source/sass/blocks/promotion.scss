@@ -1,5 +1,5 @@
 .promotion {
-  padding: 115px 0 60px 0;
+  padding: 114px 0 60px 0;
 
   @include vp-767 {
     padding: 56px 0 35px;
@@ -153,6 +153,7 @@
 }
 
 .promotion__offers-item {
+  --angle: 0deg;
   display: flex;
   flex-direction: column;
   min-height: 211px;
@@ -161,6 +162,7 @@
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   color: $color-resolution-blue;
+  animation: 10s rotate linear infinite;
 
   @include vp-767 {
     align-items: center;

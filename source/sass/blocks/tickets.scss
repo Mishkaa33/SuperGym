@@ -36,6 +36,7 @@
     margin: 0 0 16px 0;
     font-family: $ff-alumni;
     font-weight: 600;
+    padding-right: 6px;
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 0.03em;
@@ -77,7 +78,8 @@
 }
 
 .tickets__item {
-  @include hover-focus {
+  &:hover,
+  &:focus {
     .ticket {
       border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
       border-image-slice: 1;

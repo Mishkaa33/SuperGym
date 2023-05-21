@@ -84,7 +84,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     .coashes__advantages {
       display: flex;
     }
@@ -108,7 +109,7 @@
 }
 
 .coaches__item-content {
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   height: 294px;
