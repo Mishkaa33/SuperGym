@@ -42,7 +42,7 @@
   &::after {
     content: '';
     position: absolute;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 2px;
     bottom: 0;
@@ -58,6 +58,8 @@
 
   @include hover-focus {
     &::after {
+      animation: animation-line;
+      animation-duration: 1s;
       opacity: 0.8;
       color: #102654;
       background-color: #d10a42;
@@ -65,11 +67,22 @@
   }
 }
 
+@keyframes animation-line {
+  from {
+    left: 0;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .tabs__control.is-active {
+  pointer-events: none;
   color: #102654;
   &::after {
-    opacity: 0.8;
-
+    animation: animation-line;
+    animation-duration: 1s;
     background-color: #d10a42;
   }
 }
