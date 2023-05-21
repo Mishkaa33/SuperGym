@@ -4,9 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта" />
-    <title>ProjectName</title>
+    <meta
+      name="description"
+      content="Мы фитнесс зал SuperGym. Приходите тренироваться к нам!"
+    />
+    <title>SuperGym</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      type="img/favicon"
+      href="./img/favicon/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+    />
+    <link
+      type="img/favicon"
+      href="./img/favicon/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+    />
+    <link
+      href="./img/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="./img/favicon/site.webmanifest"
+      rel="manifest"
+      crossorigin="use-credentials"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -14,16 +39,12 @@
         <header class="header">
           <div class="container">
             <div class="header__wrapper">
-              <a class="header__logo-link" href="#">
-                <svg
-                  width="122"
-                  height="44"
-                  viewBox="0 0 122 44"
-                  role="img"
-                  focusable="false"
-                >
-                  <use xlink:href="./img/sprite.svg#logo"></use>
-                </svg>
+              <a
+                class="header__logo-link"
+                href="#"
+                aria-label="Логотип нашей компании."
+              >
+                <img src="./img/svg/logo.svg" alt="" width="122" height="44" />
               </a>
               <a class="header__phone-link" href="tel:88005555555"
                 >8-800-555-55-55</a
@@ -35,15 +56,46 @@
           <div class="container">
             <div class="promo__wrapper">
               <div class="promo__info">
-                <p>Омск</p>
+                <p>омск</p>
                 <h1>Фитнес центр</h1>
                 <ul class="promo__list">
-                  <li class="promo__item">Тренажерный зал</li>
-                  <li class="promo__item">Групповые занятия</li>
+                  <li class="promo__item">Тренажерный&nbsp;зал</li>
+                  <li class="promo__item">Групповые&nbsp;занятия</li>
                   <li class="promo__item">Кардио-зона</li>
                 </ul>
-                <a class="btn promo__order" href="#">Купить абонемент</a>
+                <a class="promo__order" href="#">Купить абонемент</a>
               </div>
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/superman-tablet.webp,
+                    ./img/tablet/superman-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/superman-tablet.png,
+                    ./img/tablet/superman-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/desktop/superman.webp,
+                    ./img/desktop/superman@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./img/desktop/superman.png"
+                  srcset="./img/desktop/superman@2x.png"
+                  alt="Человек стоит в форме супермена смотрит в бок."
+                  width="500"
+                  height="556px"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -71,6 +123,22 @@
               <div class="about__video">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(max-width: 320px)"
+                    srcset="
+                      ./img/mobile/gym-mobile.webp,
+                      ./img/mobile/gym-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./img/tablet/gym-tablet.webp,
+                      ./img/tablet/gym-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(max-width: 320px)"
                     srcset="
                       ./img/mobile/gym-mobile.png,
@@ -84,10 +152,18 @@
                       ./img/tablet/gym-tablet.png 2x
                     "
                   />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./img/desktop/gym.webp,
+                      ./img/desktop/gym@2x.webp 2x
+                    "
+                  />
                   <img
                     class="about__gym-image"
                     src="./img/desktop/gym.png"
-                    alt=""
+                    srcset="./img/desktop/gym@2x.png"
+                    alt="Наш спортивный зал.На фотографии изображены наши инструменты для тренировок, гантели, велосипед и уборудования для пресса."
                     width="660"
                     height="401"
                   />
@@ -95,16 +171,29 @@
                 <div class="video">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/mobile/video-bg-mobile.webp,
+                        ./img/mobile/video-bg-mobile@2x.png 2x
+                      "
+                    />
+                    <source
                       media="(max-width: 767px)"
                       srcset="
                         ./img/mobile/video-bg-mobile.png,
-                        ./img/tablet/tablet-bg@2x.jpg    2x
+                        ./img/tablet/video-bg-mobile@2x.png 2x
                       "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="./img/video-bg.webp, ./img/video-bg@2x.webp 2x"
                     />
                     <img
                       class="video__background"
                       src="./img/video-bg.png"
-                      alt=""
+                      srcset="./img/video-bg@2x.png"
+                      alt="Превью видео. Наши тренировачные инструменты."
                       width="364"
                       height="228"
                     />
@@ -113,6 +202,7 @@
                   <button
                     class="video__button-play"
                     type="button"
+                    aria-label="Запусить видео"
                     data-video-play
                   >
                     <svg
@@ -168,6 +258,7 @@
                     </svg>
                   </button>
                   <iframe
+                    loading="lazy"
                     class="video__player"
                     width="100%"
                     height="100%"
@@ -286,23 +377,59 @@
                         <div class="ticket">
                           <h3>С&nbsp;тренером</h3>
                           <span>12 занятий</span>
-                          <p data-count="10000">10000&nbsp;₽</p>
+                          <p data-count="8000">
+                            8000
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket">
+                        <div class="ticket ticket--day">
                           <h3>Дневной</h3>
                           <span>с 8:00 до 17:00 </span>
-                          <p data-count="5700">5700&nbsp;₽</p>
+                          <p data-count="3700">
+                            3700
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
                       <li class="tickets__item">
-                        <div class="ticket">
+                        <div class="ticket ticket--full-day">
                           <h3>Полный&nbsp;день</h3>
                           <span>с 8:00 до 22:00 </span>
-                          <p data-count="5700">11000&nbsp;₽</p>
+                          <p data-count="7700">
+                            7700
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
@@ -314,23 +441,59 @@
                         <div class="ticket">
                           <h3>С&nbsp;тренером</h3>
                           <span>12 занятий</span>
-                          <p data-count="15000">15000&nbsp;₽</p>
+                          <p data-count="10000">
+                            10000
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket">
+                        <div class="ticket ticket--day">
                           <h3>Дневной</h3>
                           <span>с 8:00 до 17:00 </span>
-                          <p data-count="9700">9700&nbsp;₽</p>
+                          <p data-count="7700">
+                            7700
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
                       <li class="tickets__item">
-                        <div class="ticket">
+                        <div class="ticket ticket--full-day">
                           <h3>Полный&nbsp;день</h3>
                           <span>с 8:00 до 22:00 </span>
-                          <p data-count="22000">22000&nbsp;₽</p>
+                          <p data-count="11700">
+                            11700
+                            <svg
+                              class="ticket__rouble"
+                              width="30"
+                              height="42"
+                              viewBox="0 0 30 42"
+                              role="img"
+                              focusable="false"
+                            >
+                              <use xlink:href="./img/sprite.svg#rouble"></use>
+                            </svg>
+                          </p>
                           <a class="ticket__order" href="#">купить абонемент</a>
                         </div>
                       </li>
@@ -340,12 +503,22 @@
               </div>
             </div>
           </div>
-          <img
-            src="./img/desktop/weight-desktop.png"
-            alt=""
-            width="469"
-            height="494"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                ./img/desktop/weight-desktop.webp,
+                ./img/desktop/weight-desktop@2x.webp 2x
+              "
+            />
+            <img
+              src="./img/desktop/weight-desktop.png"
+              srcset="./img/desktop/weight-desktop@2x.png"
+              alt="Розовые блины от гантели с надписью rogue"
+              width="469"
+              height="494"
+            />
+          </picture>
         </section>
         <section class="event">
           <h2 class="visually-hidden">
@@ -371,22 +544,47 @@
               </div>
               <picture>
                 <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/mobile/swimmer-mobile.webp,
+                    ./img/mobile/swimmer-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/swimmer-tablet.webp,
+                    ./img/tablet/swimmer-tablet@2x.webp 2x
+                  "
+                />
+                <source
                   media="(max-width: 767px)"
                   srcset="
                     ./img/mobile/swimmer-mobile.png,
-                    ./img/tablet/tablet-bg@2x.jpg   2x
+                    ./img/mobile/swimmer-mobile@2x.png 2x
                   "
                 />
                 <source
                   media="(max-width: 1199px)"
                   srcset="
                     ./img/tablet/swimmer-tablet.png,
-                    ./img/tablet/tablet-bg@2x.jpg   2x
+                    ./img/tablet/swimmer-tablet@2x.png,
+                    2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/desktop/swimmer-desktop.webp,
+                    ./img/desktop/swimmer-desktop@2x.webp 2x
                   "
                 />
                 <img
                   src="./img/desktop/swimmer-desktop.png"
-                  alt=""
+                  srcset="./img/desktop/sportswoman-desktop@2x.jpg"
+                  alt="Пловец с брызгами от воды"
                   width="660"
                   height="500"
                 />
@@ -406,9 +604,17 @@
                   <ul class="swiper-wrapper coaches__list">
                     <li class="swiper-slide coaches__item" tabindex="0">
                       <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-anna.webp,
+                            ./img/coach-anna@2x.webp 2x
+                          "
+                        />
                         <img
+                          loading="lazy"
                           src="./img/coach-anna.jpg"
-                          alt=""
+                          alt="Наш тренер Анна."
                           width="260"
                           height="294"
                         />
@@ -428,12 +634,22 @@
                       </div>
                     </li>
                     <li class="swiper-slide coaches__item">
-                      <img
-                        src="./img/coach-alexey.jpg"
-                        alt=""
-                        width="260"
-                        height="294"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-alexey.webp,
+                            ./img/coach-alexey@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          src="./img/coach-alexey.jpg"
+                          alt="Наш тренер Алексей."
+                          width="260"
+                          height="294"
+                        />
+                      </picture>
                       <div class="coaches__item-content">
                         <h3>Алексей Лавров</h3>
                         <h4>CrossFit</h4>
@@ -451,15 +667,31 @@
                     <li class="swiper-slide coaches__item">
                       <picture>
                         <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            ./img/tablet/coach-alexandr-tablet.webp,
+                            ./img/tablet/coach-alexandr-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
                           media="(max-width: 1199px)"
                           srcset="
                             ./img/tablet/coach-alexandr-tablet.jpg,
                             ./img/tablet/coach-alexandr-tablet@2x.jpg 2x
                           "
                         />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-alexandr.webp,
+                            ./img/coach-alexandr@2x.webp 2x
+                          "
+                        />
                         <img
+                          loading="lazy"
                           src="./img/coach-alexandr.jpg"
-                          alt=""
+                          alt="Наш тренер Александр."
                           width="260"
                           height="294"
                         />
@@ -481,15 +713,31 @@
                     <li class="swiper-slide coaches__item">
                       <picture>
                         <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            ./img/tablet/coach-anna-tablet.webp,
+                            ./img/tablet/coach-anna-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
                           media="(max-width: 1199px)"
                           srcset="
                             ./img/tablet/coach-anna-tablet.jpg,
                             ./img/tablet/coach-anna-tablet@2x.jpg 2x
                           "
                         />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-maria.webp,
+                            ./img/coach-maria@2x.webp 2x
+                          "
+                        />
                         <img
+                          loading="lazy"
                           src="./img/coach-maria.jpg"
-                          alt=""
+                          alt="Наш тренер Мария."
                           width="260"
                           height="294"
                         />
@@ -509,12 +757,22 @@
                       </div>
                     </li>
                     <li class="swiper-slide coaches__item">
-                      <img
-                        src="./img/coach-dean.jpg"
-                        alt=""
-                        width="260"
-                        height="294"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-dean.webp,
+                            ./img/coach-dean@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          src="./img/coach-dean.jpg"
+                          alt="Наш тренер Дин."
+                          width="260"
+                          height="294"
+                        />
+                      </picture>
                       <div class="coaches__item-content">
                         <h3>Дженсен "Дин" Эклз</h3>
                         <h4>CrossFit</h4>
@@ -530,12 +788,22 @@
                       </div>
                     </li>
                     <li class="swiper-slide coaches__item">
-                      <img
-                        src="./img/coach-sam.jpg"
-                        alt=""
-                        width="260"
-                        height="294"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-sam.webp,
+                            ./img/coach-sam@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          src="./img/coach-sam.jpg"
+                          alt="Наш тренер Сэм."
+                          width="260"
+                          height="294"
+                        />
+                      </picture>
                       <div class="coaches__item-content">
                         <h3>Джаред "Сэм" Падалеки</h3>
                         <h4>CrossFit</h4>
@@ -551,12 +819,22 @@
                       </div>
                     </li>
                     <li class="swiper-slide coaches__item">
-                      <img
-                        src="./img/coach-misha.jpg"
-                        alt=""
-                        width="260"
-                        height="294"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-misha.webp,
+                            ./img/coach-misha@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          src="./img/coach-misha.jpg"
+                          alt="Наш тренер миша."
+                          width="260"
+                          height="294"
+                        />
+                      </picture>
                       <div class="coaches__item-content">
                         <h3>Миша "Кас" Коллинз</h3>
                         <h4>CrossFit</h4>
@@ -572,12 +850,22 @@
                       </div>
                     </li>
                     <li class="swiper-slide coaches__item">
-                      <img
-                        src="./img/coach-piter.jpg"
-                        alt=""
-                        width="260"
-                        height="294"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/coach-piter.webp,
+                            ./img/coach-piter@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          src="./img/coach-piter.jpg"
+                          alt="Наш тренер Питер."
+                          width="260"
+                          height="294"
+                        />
+                      </picture>
                       <div class="coaches__item-content">
                         <h3>Питер "Доктор" Капальди</h3>
                         <h4>CrossFit</h4>
@@ -679,6 +967,22 @@
                   </div>
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./img/mobile/sportswoman-mobile.webp,
+                        ./img/mobile/sportswoman-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/tablet/sportswoman-tablet.webp,
+                        ./img/tablet/sportswoman-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
                       media="(max-width: 320px)"
                       srcset="
                         ./img/mobile/sportswoman-mobile.jpg,
@@ -692,9 +996,17 @@
                         ./img/tablet/sportswoman-tablet@2x.jpg 2x
                       "
                     />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/desktop/sportswoman-desktop.webp,
+                        ./img/desktop/sportswoman-desktop@2x.webp 2x
+                      "
+                    />
                     <img
                       class="promotion__sale-image"
                       src="./img/desktop/sportswoman-desktop.jpg"
+                      srcset="./img/desktop/sportswoman-desktop@2x.jpg 2x"
                       alt="Девушка спортсменка в голубом костюме"
                       width="280"
                       height="462"
@@ -734,13 +1046,24 @@
                 <div class="swiper feedback-swiper">
                   <ul class="feedback__list swiper-wrapper">
                     <li class="feedback__item swiper-slide">
-                      <img
-                        class="feedback__avatar"
-                        src="./img/feedback.png"
-                        alt=""
-                        width="80"
-                        height="80"
-                      />
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/feedback.webp,
+                            ./img/feedback@2x.webp 2x
+                          "
+                        />
+                        <img
+                          loading="lazy"
+                          class="feedback__avatar"
+                          src="./img/feedback.png"
+                          srcset="./img/feedback@2x.png 2x"
+                          alt="Аватар отзыва Анны."
+                          width="80"
+                          height="80"
+                        />
+                      </picture>
                       <h3>Анна Орлова</h3>
                       <p>
                         &laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится,
@@ -853,7 +1176,11 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
-            <a href="#" class="footer__logo">
+            <a
+              href="#"
+              class="footer__logo"
+              aria-label="Логотип нашей компании. Переход на главную страницу."
+            >
               <img src="./img/svg/logo.svg" alt="" width="88" height="23" />
             </a>
             <nav class="footer__nav">
@@ -878,7 +1205,11 @@
 
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a href="" class="footer__social-link">
+                <a
+                  href=""
+                  class="footer__social-link"
+                  aria-label="Мы Вконтакте"
+                >
                   <svg
                     width="25"
                     height="25"
@@ -891,7 +1222,11 @@
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="" class="footer__social-link">
+                <a
+                  href=""
+                  class="footer__social-link"
+                  aria-label="Мы в одноклассниках"
+                >
                   <svg
                     width="25"
                     height="25"
@@ -904,7 +1239,11 @@
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="" class="footer__social-link">
+                <a
+                  href=""
+                  class="footer__social-link"
+                  aria-label="Мы на Реддит"
+                >
                   <svg
                     width="25"
                     height="25"
@@ -921,52 +1260,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button
-            class="modal__close-btn btn-reset"
-            type="button"
-            aria-label="Закрыть попап"
-            data-close-modal
-          >
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal modal--preload modal--fit-content modal--no-scale"
-      data-modal="success"
-    >
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">
-            Размер этой модалки зависит от ширины контента,<br />
-            отключена анимация-скейл
-          </p>
-          <button
-            class="modal__close-btn btn-reset"
-            type="button"
-            aria-label="Закрыть попап"
-            data-close-modal
-          >
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
