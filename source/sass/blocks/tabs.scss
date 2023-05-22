@@ -10,7 +10,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
@@ -40,7 +40,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 100%;
@@ -62,7 +62,7 @@
       animation-duration: 1s;
       opacity: 0.8;
       color: #102654;
-      background-color: #d10a42;
+      background-color: $color-crimson;
     }
   }
 }
@@ -72,6 +72,7 @@
     left: 0;
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -87,6 +88,6 @@
     }
     animation: animation-line;
     animation-duration: 1s;
-    background-color: #d10a42;
+    background-color: $color-crimson;
   }
 }

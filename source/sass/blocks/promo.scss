@@ -163,7 +163,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -177,6 +177,7 @@
 
   @include hover-focus {
     color: $color-default-black;
+
     &::before {
       height: 200%;
     }

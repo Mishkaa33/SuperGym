@@ -17,6 +17,7 @@ $color-torch-red: #ff1553;
 $color-egyptian-blue: #103aae;
 $color-whisper: #e8e8e8;
 $color-torch-red-darker: #ed0233;
+$color-crimson: #d10a42;
 $color-dark-gray: #afafaf;
 $color-spindle: #b6bdcc;
 $color-persian-blue: #2e35ac;
@@ -41,9 +42,9 @@ $fz-default: 16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 
-$ff-rouble: 'Rouble', 'Arial', sans-serif;
-$ff-roboto: 'Roboto', 'Arial', sans-serif;
-$ff-alumni: 'Alumni', 'Arial', sans-serif;
+$ff-rouble: "Rouble", "Arial", sans-serif;
+$ff-roboto: "Roboto", "Arial", sans-serif;
+$ff-alumni: "Alumni", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

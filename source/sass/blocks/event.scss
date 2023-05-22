@@ -37,9 +37,9 @@
   background-color: $color-torch-red-darker;
   display: grid;
   grid-template-areas:
-    'title datetime'
-    'para para'
-    'btn btn';
+    "title datetime"
+    "para para"
+    "btn btn";
   gap: 0 28px;
 
   @include vp-1199 {
@@ -107,7 +107,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 4px;
     left: 0;
@@ -176,7 +176,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -190,6 +190,7 @@
 
   @include hover-focus {
     color: $color-default-black;
+
     &::before {
       height: 200%;
     }

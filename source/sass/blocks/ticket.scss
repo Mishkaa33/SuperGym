@@ -106,7 +106,6 @@
   text-transform: uppercase;
   transition: 1s;
   background: none;
-  display: block;
   overflow: hidden;
   z-index: 1;
   letter-spacing: 0.05em;
@@ -120,7 +119,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;

@@ -1,4 +1,4 @@
-import '../vendor/swiper';
+import Swiper from '../vendor/swiper';
 
 const coachesSlider = document.querySelector('.coaches__content');
 const feedbackSlider = document.querySelector('.feedback-swiper');

@@ -5,6 +5,11 @@
   @include vp-1199 {
     padding: 42px 0 40px 0;
   }
+
+  @include vp-767 {
+    position: relative;
+    padding: 46px 0;
+  }
 }
 
 .footer__wrapper {
@@ -18,16 +23,9 @@
   }
 
   @include vp-767 {
+    gap: 24px;
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-.footer__logo {
-  display: block;
-
-  @include hover-focus {
-    opacity: 0.5;
   }
 }
 
@@ -35,7 +33,11 @@
   transform: translate(4px, -6px);
 
   @include vp-1199 {
-    transform: translate(7px, 0px);
+    transform: translate(7px, 0);
+  }
+
+  @include vp-767 {
+    transform: none;
   }
 }
 
@@ -44,6 +46,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 
   @include vp-1199 {
@@ -51,7 +54,10 @@
   }
 
   @include vp-767 {
+    display: block;
+    column-count: 2;
     flex-direction: column;
+    column-gap: 76px;
   }
 }
 
@@ -76,13 +82,28 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 11px;
 }
 
 .footer__logo {
+  display: block;
+
+  @include hover-focus {
+    opacity: 0.5;
+  }
+
   @include vp-1199 {
     width: 82px;
     height: 18px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 51px;
+    width: 68px;
+
+    height: 15px;
   }
 }
 
@@ -93,5 +114,15 @@
 
   @include hover-focus {
     color: $color-torch-red-darker;
+  }
+}
+
+.footer__nav-item {
+  @include vp-767 {
+    margin-top: 16px;
+
+    &:first-child {
+      margin-top: 40px;
+    }
   }
 }

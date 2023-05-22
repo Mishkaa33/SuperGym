@@ -11582,8 +11582,8 @@ const swiper = () => {
       EffectCreative,
       EffectCards,
     ];
-    Swiper.use(modules);
     global.Swiper = Swiper;
+    Swiper.use(modules);
     return Swiper;
   });
   //# sourceMappingURL=swiper-bundle.js.map
