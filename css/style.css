@@ -2362,7 +2362,7 @@ button,
   align-items: flex-end;
 }
 
-.promo__item {
+.promo__list li {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -2717,16 +2717,16 @@ button,
   border-image-slice: 1;
 }
 
-.tickets__item:hover .tickects__item-order,
-.tickets__item:focus .tickects__item-order {
+.tickets__item:hover .tickets__item-order,
+.tickets__item:focus .tickets__item-order {
   -o-border-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
   color: #ffffff;
 }
 
-.tickets__item:hover .tickects__item-order::before,
-.tickets__item:focus .tickects__item-order::before {
+.tickets__item:hover .tickets__item-order::before,
+.tickets__item:focus .tickets__item-order::before {
   height: 200%;
 }
 
@@ -2876,14 +2876,14 @@ button,
   margin: 0;
 }
 
-.event__date {
+.event__datetime dt {
   position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
 
-.event__time {
+.event__datetime dd {
   margin: 0 0 8px 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2897,7 +2897,7 @@ button,
   position: relative;
 }
 
-.event__time::after {
+.event__datetime dd::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -2907,17 +2907,11 @@ button,
   background-color: #ffffff;
 }
 
-.event__time small {
+.event__datetime dd small {
   margin: 0 0 0 7px;
   display: block;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
-}
-
-.event__time time {
-  font-weight: 700;
-  font-size: 40px;
   line-height: 150%;
 }
 
@@ -3085,12 +3079,12 @@ button,
   line-height: 150%;
 }
 
-.coaches__advantages-item {
+.coaches__advantages li {
   position: relative;
   padding-left: 48px;
 }
 
-.coaches__advantages-item::before {
+.coaches__advantages li::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -3208,7 +3202,8 @@ button,
 }
 
 .advantages__head {
-  padding: 51px 34px 65px 34px;
+  overflow: auto;
+  padding: 51px 34px 55px;
   background-color: #1c3374;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -4044,26 +4039,22 @@ button,
     transform: translateY(-16px);
   }
 
-  .event__date {
+  .event__datetime dt {
     font-size: 12px;
   }
 
-  .event__time::after {
+  .event__datetime dd::after {
     top: 1px;
   }
 
-  .event__time {
+  .event__datetime dd {
     font-size: 24px;
     margin: 0;
   }
 
-  .event__time small {
+  .event__datetime dd small {
     font-size: 10px;
     margin: 0 0 0 4px;
-  }
-
-  .event__time time {
-    font-size: 24px;
   }
 
   .event__order {
@@ -4510,6 +4501,15 @@ button,
     grid-template-columns: 1fr;
   }
 
+  .event__content {
+    gap: 0 34px;
+  }
+
+  .event__content h3 {
+    text-align: left;
+    margin: 4px 0 0 7px;
+  }
+
   .coaches {
     padding: 32px 0 63px 0;
   }
@@ -4553,11 +4553,11 @@ button,
     height: 100%;
   }
 
-  .coaches__advantages-item {
+  .coaches__advantages li {
     padding-left: 27px;
   }
 
-  .coaches__advantages-item::before {
+  .coaches__advantages li::before {
     left: 11px;
   }
 
