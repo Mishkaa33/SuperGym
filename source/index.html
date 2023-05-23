@@ -120,10 +120,10 @@
                 />
                 <img
                   src="./img/desktop/superman.png"
-                  srcset="./img/desktop/superman@2x.png"
+                  srcset="./img/desktop/superman@2x.png 2x"
                   alt="Человек стоит в форме супермена смотрит в бок."
                   width="500"
-                  height="556px"
+                  height="556"
                 />
               </picture>
             </div>
@@ -270,7 +270,7 @@
                           y2="10.6444"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#ED0233" />
+                          <stop offset="0" stop-color="#ED0233" />
                           <stop offset="1" stop-color="#003EB7" />
                         </linearGradient>
                         <linearGradient
@@ -281,7 +281,7 @@
                           y2="9.18415"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#003D85" />
+                          <stop offset="0" stop-color="#003D85" />
                           <stop offset="0.885417" stop-color="#B80027" />
                         </linearGradient>
                       </defs>
@@ -290,11 +290,10 @@
                   <iframe
                     loading="lazy"
                     class="video__player"
-                    width="100%"
-                    height="100%"
+                    width="364"
+                    height="228"
                     src="https://www.youtube.com/embed/9TZXsZItgdw"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
@@ -340,7 +339,7 @@
                   <div class="tabs__element" data-tabs="element">
                     <ul class="tickets__list">
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket">
+                        <div class="ticket tickets__item-content">
                           <h3>С&nbsp;тренером</h3>
                           <span>12 занятий</span>
                           <p data-count="5000">
@@ -356,11 +355,13 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket ticket--day">
+                        <div class="ticket ticket--day tickets__item-content">
                           <h3>Дневной</h3>
                           <span>с 8:00 до 17:00 </span>
                           <p data-count="1700">
@@ -376,11 +377,15 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item">
-                        <div class="ticket ticket--full-day">
+                        <div
+                          class="ticket ticket--full-day tickets__item-content"
+                        >
                           <h3>Полный&nbsp;день</h3>
                           <span>с 8:00 до 22:00 </span>
                           <p data-count="2700">
@@ -396,7 +401,9 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -404,7 +411,7 @@
                   <div class="tabs__element" data-tabs="element">
                     <ul class="tickets__list">
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket">
+                        <div class="ticket tickets__item-content">
                           <h3>С&nbsp;тренером</h3>
                           <span>12 занятий</span>
                           <p data-count="8000">
@@ -420,11 +427,13 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket ticket--day">
+                        <div class="ticket ticket--day tickets__item-content">
                           <h3>Дневной</h3>
                           <span>с 8:00 до 17:00 </span>
                           <p data-count="3700">
@@ -440,11 +449,15 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item">
-                        <div class="ticket ticket--full-day">
+                        <div
+                          class="ticket ticket--full-day tickets__item-content"
+                        >
                           <h3>Полный&nbsp;день</h3>
                           <span>с 8:00 до 22:00 </span>
                           <p data-count="7700">
@@ -460,7 +473,9 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -468,7 +483,7 @@
                   <div class="tabs__element" data-tabs="element">
                     <ul class="tickets__list">
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket">
+                        <div class="ticket tickets__item-content">
                           <h3>С&nbsp;тренером</h3>
                           <span>12 занятий</span>
                           <p data-count="10000">
@@ -484,11 +499,13 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item" tabindex="0">
-                        <div class="ticket ticket--day">
+                        <div class="ticket ticket--day tickets__item-content">
                           <h3>Дневной</h3>
                           <span>с 8:00 до 17:00 </span>
                           <p data-count="7700">
@@ -504,11 +521,15 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                       <li class="tickets__item">
-                        <div class="ticket ticket--full-day">
+                        <div
+                          class="ticket ticket--full-day tickets__item-content"
+                        >
                           <h3>Полный&nbsp;день</h3>
                           <span>с 8:00 до 22:00 </span>
                           <p data-count="11700">
@@ -524,7 +545,9 @@
                               <use xlink:href="./img/sprite.svg#rouble"></use>
                             </svg>
                           </p>
-                          <a class="ticket__order" href="#">купить абонемент</a>
+                          <a class="ticket__order tickects__item-order" href="#"
+                            >купить абонемент</a
+                          >
                         </div>
                       </li>
                     </ul>
@@ -600,8 +623,7 @@
                   media="(max-width: 1199px)"
                   srcset="
                     ./img/tablet/swimmer-tablet.png,
-                    ./img/tablet/swimmer-tablet@2x.png,
-                    2x
+                    ./img/tablet/swimmer-tablet@2x.png 2x
                   "
                 />
                 <source
@@ -652,14 +674,14 @@
                       <div class="coaches__item-content">
                         <h3>Анна Павлова</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -683,14 +705,14 @@
                       <div class="coaches__item-content">
                         <h3>Алексей Лавров</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -729,14 +751,14 @@
                       <div class="coaches__item-content">
                         <h3>Александр Пашков</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -775,14 +797,14 @@
                       <div class="coaches__item-content">
                         <h3>Мария Кетова</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -806,14 +828,14 @@
                       <div class="coaches__item-content">
                         <h3>Дженсен "Дин" Эклз</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -837,14 +859,14 @@
                       <div class="coaches__item-content">
                         <h3>Джаред "Сэм" Падалеки</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -868,14 +890,14 @@
                       <div class="coaches__item-content">
                         <h3>Миша "Кас" Коллинз</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -899,14 +921,14 @@
                       <div class="coaches__item-content">
                         <h3>Питер "Доктор" Капальди</h3>
                         <h4>CrossFit</h4>
-                        <ul class="coashes__advantages">
-                          <li class="coashes__advantages-item">
+                        <ul class="coaches__advantages">
+                          <li class="coaches__advantages-item">
                             Certified Level 3 Trainer
                           </li>
-                          <li class="coashes__advantages-item">
+                          <li class="coaches__advantages-item">
                             Победитель чемпионата России по&nbsp;CrossFit
                           </li>
-                          <li class="coashes__advantages-item">Опыт — 6 лет</li>
+                          <li class="coaches__advantages-item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </li>
@@ -983,7 +1005,7 @@
         </section>
         <section class="promotion">
           <div class="container">
-            <div class="promotion_wrapper">
+            <div class="promotion__wrapper">
               <h2>Акции</h2>
               <div class="promotion__content">
                 <div class="promotion__preview">
@@ -1187,29 +1209,29 @@
           <section class="content-wrapper__item">
             <div class="contacts">
               <h2>Контакты</h2>
-              <ul class="contact__list">
-                <li class="contact__item">
+              <ul class="contacts__list">
+                <li class="contacts__item">
                   <h3>Адрес:</h3>
                   <address>
                     г. Омск, ул.&nbsp;60&nbsp;лет Октября,&nbsp;7
                   </address>
                 </li>
-                <li class="contact__item">
+                <li class="contacts__item">
                   <h3>Телефон:</h3>
                   <p>
-                    <a href="tel:88005555555" class="contact__phone-number"
+                    <a href="tel:88005555555" class="contacts__phone-number"
                       >8-800-555-55-55</a
                     >
                   </p>
                 </li>
-                <li class="contact__item">
+                <li class="contacts__item">
                   <h3>График работы:</h3>
                   <p>Пн-Вс: с 8:00 до 22:00</p>
                 </li>
-                <li class="contact__item">
+                <li class="contacts__item">
                   <h3>Email:</h3>
                   <p>
-                    <a href="mailto:omsk@supergym.ru" class="contact__email"
+                    <a href="mailto:omsk@supergym.ru" class="contacts__email"
                       >omsk@supergym.ru</a
                     >
                   </p>

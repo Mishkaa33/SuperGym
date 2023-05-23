@@ -80,12 +80,12 @@
 .tickets__item {
   &:hover,
   &:focus {
-    .ticket {
+    .tickets__item-content {
       border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
       border-image-slice: 1;
     }
 
-    .ticket__order {
+    .tickects__item-order {
       &::before {
         height: 200%;
       }
