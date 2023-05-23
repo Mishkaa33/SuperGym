@@ -10,5 +10,9 @@ const playVideo = () => {
 };
 
 export const initVideo = () => {
-  buttonPlay.addEventListener('click', playVideo);
+  if (buttonPlay) {
+    buttonPlay.addEventListener('click', playVideo);
+  } else {
+    return;
+  }
 };

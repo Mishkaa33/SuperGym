@@ -113,6 +113,16 @@
   flex-direction: column;
   align-items: flex-end;
 
+  li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: $color-default-white;
+  }
+
   @include vp-1199 {
     padding-top: 88px;
   }
@@ -121,16 +131,6 @@
     padding-top: 77px;
     transform: translateX(9px);
   }
-}
-
-.promo__item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  text-align: right;
-  color: $color-default-white;
 }
 
 .promo__order {

@@ -159,7 +159,8 @@
 }
 
 .advantages__head {
-  padding: 51px 34px 65px 34px;
+  overflow: auto;
+  padding: 51px 34px 55px;
   background-color: $color-resolution-blue;
   grid-column: 2 / 3;
   height: 307px;

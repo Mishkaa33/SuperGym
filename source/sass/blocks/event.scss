@@ -49,6 +49,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  @include vp-767 {
+    gap: 0 34px;
+  }
+
   h3 {
     font-family: $ff-alumni;
     grid-area: title;
@@ -64,6 +68,11 @@
       font-size: 48px;
       line-height: 46px;
       margin: 4px 0 0 5px;
+    }
+
+    @include vp-767 {
+      text-align: left;
+      margin: 4px 0 0 7px;
     }
   }
 
@@ -84,67 +93,57 @@
 .event__datetime {
   grid-area: datetime;
   margin: 0;
-}
 
-.event__date {
-  position: relative;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-
-  @include vp-1199 {
-    font-size: 12px;
-  }
-}
-
-.event__time {
-  margin: 0 0 8px 0;
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 150%;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $color-default-white;
-
-    @include vp-1199 {
-      top: 1px;
-    }
-  }
-
-  @include vp-1199 {
-    font-size: 24px;
-    margin: 0;
-  }
-
-  small {
-    margin: 0 0 0 7px;
-    display: block;
+  dt {
+    position: relative;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 150%;
 
     @include vp-1199 {
-      font-size: 10px;
-      margin: 0 0 0 4px;
+      font-size: 12px;
     }
   }
 
-  time {
+  dd {
+    margin: 0 0 8px 0;
+    display: inline-flex;
+    align-items: center;
     font-weight: 700;
     font-size: 40px;
     line-height: 150%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+
+      @include vp-1199 {
+        top: 1px;
+      }
+    }
 
     @include vp-1199 {
       font-size: 24px;
+      margin: 0;
+    }
+
+    small {
+      margin: 0 0 0 7px;
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+
+      @include vp-1199 {
+        font-size: 10px;
+        margin: 0 0 0 4px;
+      }
     }
   }
 }
