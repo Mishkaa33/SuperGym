@@ -40,7 +40,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 148px 11px;
+  gap: 147px 11px;
   grid-auto-flow: dense;
 
   @include vp-1199 {
@@ -59,7 +59,7 @@
 .advantages__item {
   display: grid;
   grid-template-columns: min-content 1fr;
-  gap: 0 30px;
+  gap: 0 31px;
   position: relative;
 
   &:nth-child(n + 4) {
@@ -163,14 +163,12 @@
   padding: 51px 34px 55px;
   background-color: $color-resolution-blue;
   grid-column: 2 / 3;
-  height: 307px;
   grid-row: span 2;
-  margin: 7px 48px 0 40px;
+  margin: 7px 48px 10px 40px;
   position: relative;
 
   @include vp-1199 {
-    height: 239px;
-    padding: 30px 123px;
+    padding: 31px 123px 37px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     margin: 0 auto;
@@ -211,7 +209,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 150%;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     @include vp-1199 {
       font-size: 22px;

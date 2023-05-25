@@ -17,8 +17,13 @@
   padding: 47px calc(100% - 580px) 64px 120px;
   border-top: 1px solid #74819c;
 
+  @include vp-1279 {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
   @include vp-1199 {
-    padding: 62px 179px 61px 133px;
+    padding: 62px 172px 61px 133px;
   }
 
   @include vp-767 {
@@ -33,6 +38,11 @@
 
   &:nth-child(2n + 1) {
     padding: 56px 170px 64px calc(100% - 580px);
+
+    @include vp-1279 {
+      padding-right: 70px;
+      padding-left: 70px;
+    }
 
     @include vp-1199 {
       padding: 61px 161px 68px 133px;

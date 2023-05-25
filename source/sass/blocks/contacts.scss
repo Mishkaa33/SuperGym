@@ -30,6 +30,7 @@
   grid-template-columns: max-content 1fr;
   gap: 18px 120px;
   position: relative;
+  color: $color-sapphire;
 
   @include vp-1199 {
     padding: 0;
@@ -102,5 +103,14 @@
       font-size: 18px;
       line-height: 27px;
     }
+  }
+}
+
+.contacts__links {
+  color: $color-sapphire;
+  transition: 0.5s;
+
+  @include hover-focus {
+    color: $color-torch-red;
   }
 }

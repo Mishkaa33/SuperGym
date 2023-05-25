@@ -15,6 +15,9 @@
   grid-template-columns: 500px 1fr;
 
   img {
+    height: 100%;
+    object-fit: cover;
+
     @include vp-767 {
       width: 100%;
     }
@@ -22,7 +25,7 @@
 
   @include vp-1199 {
     grid-template-columns: 292px 386px;
-    align-items: center;
+
     justify-content: center;
   }
 
@@ -33,24 +36,25 @@
 
 .event__content {
   color: $color-default-white;
-  padding: 81px 79px 87px 78px;
+  padding: 81px 77px 87px 77px;
   background-color: $color-torch-red-darker;
   display: grid;
   grid-template-areas:
     "title datetime"
     "para para"
     "btn btn";
-  gap: 0 28px;
+  grid-template-rows: min-content min-content min-content;
+  gap: 23px 31px;
 
   @include vp-1199 {
-    gap: 0 36px;
+    gap: 15px 36px;
     min-height: 292px;
-    padding: 45px 42px 50px 44px;
+    padding: 45px 44px 50px 44px;
     grid-template-columns: 1fr 1fr;
   }
 
   @include vp-767 {
-    gap: 0 34px;
+    gap: 15px 34px;
   }
 
   h3 {
@@ -67,7 +71,7 @@
     @include vp-1199 {
       font-size: 48px;
       line-height: 46px;
-      margin: 4px 0 0 5px;
+      margin: 4px 0 0 6px;
     }
 
     @include vp-767 {
@@ -149,17 +153,19 @@
 }
 
 .event__order {
+  user-select: none;
   grid-area: btn;
   white-space: nowrap;
   font-size: 12px;
   line-height: 14px;
+  font-weight: 700;
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   display: flex;
   border: 4px solid $color-default-white;
   color: $color-default-white;
-  padding: 12px 110px;
+  padding: 24px 110px;
   text-align: center;
   justify-content: center;
   z-index: 1;
@@ -168,7 +174,7 @@
   transition: 1s;
 
   @include vp-1199 {
-    padding: 5px 51px;
+    padding: 12px 51px;
     font-size: 10px;
     line-height: 12px;
     border: 2px solid $color-default-white;

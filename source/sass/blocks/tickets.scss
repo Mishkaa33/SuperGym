@@ -79,6 +79,7 @@
 
 .tickets__item {
   &:hover,
+  &:focus-within,
   &:focus {
     .tickets__item-content {
       border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
